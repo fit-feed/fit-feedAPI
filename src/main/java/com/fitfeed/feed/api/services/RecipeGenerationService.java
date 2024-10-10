@@ -2,6 +2,7 @@ package com.fitfeed.feed.api.services;
 
 import com.fitfeed.feed.api.models.Profile;
 import com.fitfeed.feed.api.models.Recipe;
+import com.fitfeed.feed.api.models.enums.Diet;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,9 +15,8 @@ public class RecipeGenerationService {
 		this.recipeService = recipeService;
 	}
 	public List<Recipe> getRecipeByProfil(Number numberOfRecipes, Profile profile){
-		System.out.println(profile.diet().toString());
 		var recipes = this.recipeService.getRecipes().stream()
-			.filter(recipe -> recipe.diet == profile.diet() && recipe.isValidForProfile(profile))
+			.filter(recipe -> isAvailable(recipe.diet ,profile.diet()) && recipe.isValidForProfile(profile))
 			.toList();
 
 		if(recipes.size() > numberOfRecipes.intValue()){ recipes =  recipes.subList(0,numberOfRecipes.intValue() - 1);}
@@ -47,4 +47,24 @@ public class RecipeGenerationService {
 			}
 		}
 	}
+
+	private boolean isAvailable(Diet RecipeDiet, Diet ProfileDiet){
+		// Un omnivore peut manger n'importe quelle recette
+		if (ProfileDiet == Diet.OMNIVORE) {
+			return true;
+		}
+
+		// Un végétarien peut manger des recettes végétariennes ou veganes
+		if (ProfileDiet == Diet.VEGETARIAN) {
+			return RecipeDiet == Diet.VEGETARIAN || RecipeDiet == Diet.VEGAN;
+		}
+
+		// Un vegan ne peut manger que des recettes veganes
+		if (ProfileDiet == Diet.VEGAN) {
+			return RecipeDiet == Diet.VEGAN;
+		}
+
+		// Par défaut, pas compatible
+		return false;
+	};
 }

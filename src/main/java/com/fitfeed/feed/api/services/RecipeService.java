@@ -81,7 +81,7 @@ public class RecipeService {
 					new Ingredient("Carotte", 3, QuantityType.PART, Allergen.NONE),
 					new Ingredient("Lait de coco", 100, QuantityType.MILLILITER, Allergen.NONE)
 				),
-				Diet.GLUTEN_FREE, new Timestamp(2400),
+				Diet.VEGAN, new Timestamp(2400),
 				List.of(
 					new Step("Cuire les légumes", "Faire cuire les patates douces et les carottes."),
 					new Step("Mixer la soupe", "Mixer les légumes avec le lait de coco.")
@@ -95,7 +95,7 @@ public class RecipeService {
 					new Ingredient("Tomate", 4, QuantityType.PART, Allergen.NONE),
 					new Ingredient("Basilic", 5, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.GLUTEN_FREE, new Timestamp(1800),
+				Diet.VEGAN, new Timestamp(1800),
 				List.of(
 					new Step("Cuire les pâtes", "Faire cuire les pâtes sans gluten selon les instructions."),
 					new Step("Préparer la sauce", "Faire revenir les tomates avec du basilic.")
@@ -124,7 +124,7 @@ public class RecipeService {
 					new Ingredient("Lait d'amande", 300, QuantityType.MILLILITER, Allergen.TREE_NUTS),
 					new Ingredient("Sucre", 20, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.LACTOSE_FREE, new Timestamp(2400),
+				Diet.VEGETARIAN, new Timestamp(2400),
 				List.of(
 					new Step("Cuire le riz", "Faire cuire le riz dans le lait d'amande."),
 					new Step("Ajouter le sucre", "Ajouter le sucre à la préparation.")
@@ -138,7 +138,7 @@ public class RecipeService {
 					new Ingredient("Courgette", 1, QuantityType.PART, Allergen.NONE),
 					new Ingredient("Farine sans gluten", 100, QuantityType.GRAM, Allergen.GLUTEN)
 				),
-				Diet.GLUTEN_FREE, new Timestamp(1800),
+				Diet.VEGETARIAN, new Timestamp(1800),
 				List.of(
 					new Step("Préparer la pâte", "Mélanger les légumes râpés et la farine."),
 					new Step("Cuire les galettes", "Faire cuire les galettes dans une poêle.")
@@ -168,7 +168,7 @@ public class RecipeService {
 					new Ingredient("Lait d'amande", 250, QuantityType.MILLILITER, Allergen.TREE_NUTS),
 					new Ingredient("Miel", 10, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.LACTOSE_FREE, new Timestamp(300),
+				Diet.VEGAN, new Timestamp(300),
 				List.of(
 					new Step("Mixer les ingrédients", "Mixer tous les ingrédients jusqu'à obtenir un smoothie homogène.")
 				),
@@ -198,7 +198,7 @@ public class RecipeService {
 					new Ingredient("Oeuf", 1, QuantityType.PART, Allergen.EGGS),
 					new Ingredient("Sirop d'érable", 20, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.GLUTEN_FREE, new Timestamp(1200),
+				Diet.VEGETARIAN, new Timestamp(1200),
 				List.of(
 					new Step("Préparer la pâte", "Mélanger la farine, le lait et l'œuf pour faire la pâte."),
 					new Step("Cuire les pancakes", "Verser la pâte dans une poêle chaude et cuire chaque côté.")
@@ -261,7 +261,7 @@ public class RecipeService {
 					new Ingredient("Oeuf", 2, QuantityType.PART, Allergen.EGGS),
 					new Ingredient("Sucre", 20, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.LACTOSE_FREE, new Timestamp(1800),
+				Diet.VEGETARIAN, new Timestamp(1800),
 				List.of(
 					new Step("Préparer la pâte", "Mélanger tous les ingrédients pour faire la pâte à gaufres."),
 					new Step("Cuire les gaufres", "Verser la pâte dans un gaufrier et cuire jusqu'à dorure.")
@@ -277,7 +277,7 @@ public class RecipeService {
 					new Ingredient("Mozzarella", 100, QuantityType.GRAM, Allergen.DAIRY),
 					new Ingredient("Basilic", 5, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.GLUTEN_FREE, new Timestamp(2400),
+				Diet.VEGETARIAN, new Timestamp(2400),
 				List.of(
 					new Step("Préparer la pizza", "Étaler la pâte, ajouter les ingrédients, et cuire au four.")
 				),
@@ -384,7 +384,7 @@ public class RecipeService {
 					new Ingredient("Oeufs", 3, QuantityType.PART, Allergen.EGGS),
 					new Ingredient("Beurre", 50, QuantityType.GRAM, Allergen.DAIRY)
 				),
-				Diet.GLUTEN_FREE, new Timestamp(1800),
+				Diet.VEGETARIAN, new Timestamp(1800),
 				List.of(
 					new Step("Préparer le gâteau", "Mélanger les ingrédients et cuire au four.")
 				),
@@ -430,7 +430,7 @@ public class RecipeService {
 					new Ingredient("Sucre", 50, QuantityType.GRAM, Allergen.NONE),
 					new Ingredient("Cannelle", 5, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.LACTOSE_FREE, new Timestamp(2400),
+				Diet.VEGETARIAN, new Timestamp(2400),
 				List.of(
 					new Step("Préparer la tarte", "Étaler la pâte, ajouter les pommes et le sucre, puis cuire au four.")
 				),
