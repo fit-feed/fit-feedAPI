@@ -22,4 +22,4 @@ RUN mvn package -DskipTests
 # Exposer le port sur lequel l'application s'exécutera
 EXPOSE 8085
 
-CMD export WEB_URL = $WEB_URL && source .env && mvn clean install exec:java
+CMD source .env && mvn clean install exec:java
