@@ -1,0 +1,12 @@
+name: fit-feed
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fit-feed-api
+    restart: always
+    ports:
+      - "8085:8085"
+    env_file:
+      - .env
