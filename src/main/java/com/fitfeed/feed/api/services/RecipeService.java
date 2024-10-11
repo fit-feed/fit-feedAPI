@@ -22,7 +22,7 @@ public class RecipeService {
 					new Ingredient("Concombre", 1, QuantityType.PART, Allergen.NONE),
 					new Ingredient("Avocat", 1, QuantityType.PART, Allergen.NONE)
 				),
-				Diet.VEGAN, new Timestamp(1800),
+				Diet.VEGAN, 1800,
 				List.of(
 					new Step("Préparer le quinoa", "Faire cuire le quinoa pendant 15 minutes."),
 					new Step("Mélanger les légumes", "Couper les légumes et les mélanger avec le quinoa.")
@@ -36,7 +36,7 @@ public class RecipeService {
 					new Ingredient("Champignon", 100, QuantityType.GRAM, Allergen.NONE),
 					new Ingredient("Beurre", 10, QuantityType.GRAM, Allergen.DAIRY)
 				),
-				Diet.OMNIVORE, new Timestamp(1200),
+				Diet.OMNIVORE, 1200,
 				List.of(
 					new Step("Battre les oeufs", "Battre les oeufs dans un bol."),
 					new Step("Cuire les champignons", "Faire revenir les champignons dans du beurre."),
@@ -52,7 +52,7 @@ public class RecipeService {
 					new Ingredient("Épinards", 50, QuantityType.GRAM, Allergen.NONE),
 					new Ingredient("Oignon", 1, QuantityType.PART, Allergen.NONE)
 				),
-				Diet.VEGAN, new Timestamp(2400),
+				Diet.VEGAN, 2400,
 				List.of(
 					new Step("Préparer les lentilles", "Faire cuire les lentilles dans l'eau bouillante."),
 					new Step("Faire le curry", "Mélanger le lait de coco et les épices avec les lentilles.")
@@ -67,7 +67,7 @@ public class RecipeService {
 					new Ingredient("Carotte", 2, QuantityType.PART, Allergen.NONE),
 					new Ingredient("Huile d'olive", 10, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.OMNIVORE, new Timestamp(1800),
+				Diet.OMNIVORE, 1800,
 				List.of(
 					new Step("Griller le poulet", "Faire griller le poulet jusqu'à ce qu'il soit bien cuit."),
 					new Step("Cuire les légumes", "Faire cuire les légumes à la vapeur.")
@@ -81,7 +81,7 @@ public class RecipeService {
 					new Ingredient("Carotte", 3, QuantityType.PART, Allergen.NONE),
 					new Ingredient("Lait de coco", 100, QuantityType.MILLILITER, Allergen.NONE)
 				),
-				Diet.VEGAN, new Timestamp(2400),
+				Diet.VEGAN, 2400,
 				List.of(
 					new Step("Cuire les légumes", "Faire cuire les patates douces et les carottes."),
 					new Step("Mixer la soupe", "Mixer les légumes avec le lait de coco.")
@@ -95,7 +95,7 @@ public class RecipeService {
 					new Ingredient("Tomate", 4, QuantityType.PART, Allergen.NONE),
 					new Ingredient("Basilic", 5, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.VEGAN, new Timestamp(1800),
+				Diet.VEGAN, 1800,
 				List.of(
 					new Step("Cuire les pâtes", "Faire cuire les pâtes sans gluten selon les instructions."),
 					new Step("Préparer la sauce", "Faire revenir les tomates avec du basilic.")
@@ -110,7 +110,7 @@ public class RecipeService {
 					new Ingredient("Carotte", 1, QuantityType.PART, Allergen.NONE),
 					new Ingredient("Sauce soja", 20, QuantityType.MILLILITER, Allergen.NONE)
 				),
-				Diet.VEGAN, new Timestamp(1200),
+				Diet.VEGAN, 1200,
 				List.of(
 					new Step("Préparer le tofu", "Faire revenir le tofu dans une poêle avec de l'huile."),
 					new Step("Ajouter les légumes", "Ajouter les légumes coupés et la sauce soja.")
@@ -124,7 +124,7 @@ public class RecipeService {
 					new Ingredient("Lait d'amande", 300, QuantityType.MILLILITER, Allergen.TREE_NUTS),
 					new Ingredient("Sucre", 20, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.VEGETARIAN, new Timestamp(2400),
+				Diet.VEGETARIAN, 2400,
 				List.of(
 					new Step("Cuire le riz", "Faire cuire le riz dans le lait d'amande."),
 					new Step("Ajouter le sucre", "Ajouter le sucre à la préparation.")
@@ -138,7 +138,7 @@ public class RecipeService {
 					new Ingredient("Courgette", 1, QuantityType.PART, Allergen.NONE),
 					new Ingredient("Farine sans gluten", 100, QuantityType.GRAM, Allergen.GLUTEN)
 				),
-				Diet.VEGETARIAN, new Timestamp(1800),
+				Diet.VEGETARIAN, 1800,
 				List.of(
 					new Step("Préparer la pâte", "Mélanger les légumes râpés et la farine."),
 					new Step("Cuire les galettes", "Faire cuire les galettes dans une poêle.")
@@ -153,7 +153,7 @@ public class RecipeService {
 					new Ingredient("Parmesan", 50, QuantityType.GRAM, Allergen.DAIRY),
 					new Ingredient("Bouillon de légumes", 500, QuantityType.MILLILITER, Allergen.NONE)
 				),
-				Diet.OMNIVORE, new Timestamp(2700),
+				Diet.OMNIVORE, 2700,
 				List.of(
 					new Step("Préparer le risotto", "Faire cuire le riz en ajoutant progressivement le bouillon."),
 					new Step("Ajouter les champignons", "Faire revenir les champignons et les mélanger au riz.")
@@ -168,7 +168,7 @@ public class RecipeService {
 					new Ingredient("Lait d'amande", 250, QuantityType.MILLILITER, Allergen.TREE_NUTS),
 					new Ingredient("Miel", 10, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.VEGAN, new Timestamp(300),
+				Diet.VEGAN, 300,
 				List.of(
 					new Step("Mixer les ingrédients", "Mixer tous les ingrédients jusqu'à obtenir un smoothie homogène.")
 				),
@@ -183,7 +183,7 @@ public class RecipeService {
 					new Ingredient("Avocat", 1, QuantityType.PART, Allergen.NONE),
 					new Ingredient("Salade", 50, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.OMNIVORE, new Timestamp(900),
+				Diet.OMNIVORE, 900,
 				List.of(
 					new Step("Préparer les wraps", "Cuire le poulet, couper les légumes, et assembler les wraps.")
 				),
@@ -198,7 +198,7 @@ public class RecipeService {
 					new Ingredient("Oeuf", 1, QuantityType.PART, Allergen.EGGS),
 					new Ingredient("Sirop d'érable", 20, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.VEGETARIAN, new Timestamp(1200),
+				Diet.VEGETARIAN, 1200,
 				List.of(
 					new Step("Préparer la pâte", "Mélanger la farine, le lait et l'œuf pour faire la pâte."),
 					new Step("Cuire les pancakes", "Verser la pâte dans une poêle chaude et cuire chaque côté.")
@@ -214,7 +214,7 @@ public class RecipeService {
 					new Ingredient("Maïs", 100, QuantityType.GRAM, Allergen.NONE),
 					new Ingredient("Épices chili", 5, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.VEGAN, new Timestamp(2400),
+				Diet.VEGAN, 2400,
 				List.of(
 					new Step("Préparer le chili", "Faire mijoter les haricots, les tomates et le maïs avec les épices.")
 				),
@@ -229,7 +229,7 @@ public class RecipeService {
 					new Ingredient("Citron", 1, QuantityType.PART, Allergen.NONE),
 					new Ingredient("Huile d'olive", 10, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.OMNIVORE, new Timestamp(1200),
+				Diet.OMNIVORE, 1200,
 				List.of(
 					new Step("Griller le saumon", "Faire griller le saumon avec de l'huile d'olive et de l'aneth."),
 					new Step("Servir", "Ajouter un filet de citron avant de servir.")
@@ -245,7 +245,7 @@ public class RecipeService {
 					new Ingredient("Tomate", 1, QuantityType.PART, Allergen.NONE),
 					new Ingredient("Salade", 50, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.VEGETARIAN, new Timestamp(1800),
+				Diet.VEGETARIAN, 1800,
 				List.of(
 					new Step("Préparer le steak de pois chiches", "Mixer les pois chiches et former un steak."),
 					new Step("Assembler le burger", "Griller le pain et assembler les ingrédients.")
@@ -261,7 +261,7 @@ public class RecipeService {
 					new Ingredient("Oeuf", 2, QuantityType.PART, Allergen.EGGS),
 					new Ingredient("Sucre", 20, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.VEGETARIAN, new Timestamp(1800),
+				Diet.VEGETARIAN, 1800,
 				List.of(
 					new Step("Préparer la pâte", "Mélanger tous les ingrédients pour faire la pâte à gaufres."),
 					new Step("Cuire les gaufres", "Verser la pâte dans un gaufrier et cuire jusqu'à dorure.")
@@ -277,7 +277,7 @@ public class RecipeService {
 					new Ingredient("Mozzarella", 100, QuantityType.GRAM, Allergen.DAIRY),
 					new Ingredient("Basilic", 5, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.VEGETARIAN, new Timestamp(2400),
+				Diet.VEGETARIAN, 2400,
 				List.of(
 					new Step("Préparer la pizza", "Étaler la pâte, ajouter les ingrédients, et cuire au four.")
 				),
@@ -292,7 +292,7 @@ public class RecipeService {
 					new Ingredient("Tomate", 2, QuantityType.PART, Allergen.NONE),
 					new Ingredient("Menthe", 5, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.VEGAN, new Timestamp(1200),
+				Diet.VEGAN, 1200,
 				List.of(
 					new Step("Préparer le taboulé", "Faire cuire le quinoa et mélanger avec les légumes et la menthe.")
 				),
@@ -307,7 +307,7 @@ public class RecipeService {
 				new Ingredient("Concombre", 1, QuantityType.PART, Allergen.NONE),
 				new Ingredient("Citron", 1, QuantityType.PART, Allergen.NONE)
 			),
-			Diet.VEGAN, new Timestamp(600),
+			Diet.VEGAN, 600,
 			List.of(
 				new Step("Cuire le quinoa", "Cuire le quinoa dans de l'eau bouillante."),
 				new Step("Assembler la salade", "Mélanger le quinoa, l'avocat et le concombre, puis ajouter du citron.")
@@ -323,7 +323,7 @@ public class RecipeService {
 					new Ingredient("Tofu", 100, QuantityType.GRAM, Allergen.SOY),
 					new Ingredient("Oignon vert", 1, QuantityType.PART, Allergen.NONE)
 				),
-				Diet.VEGAN, new Timestamp(600),
+				Diet.VEGAN, 600,
 				List.of(
 					new Step("Préparer la soupe", "Faire bouillir de l'eau et y dissoudre le miso."),
 					new Step("Ajouter les ingrédients", "Ajouter le tofu, les algues et l'oignon vert.")
@@ -339,7 +339,7 @@ public class RecipeService {
 					new Ingredient("Fromage râpé", 50, QuantityType.GRAM, Allergen.DAIRY),
 					new Ingredient("Beurre", 10, QuantityType.GRAM, Allergen.DAIRY)
 				),
-				Diet.VEGETARIAN, new Timestamp(600),
+				Diet.VEGETARIAN, 600,
 				List.of(
 					new Step("Préparer l'omelette", "Battre les œufs et les faire cuire avec les champignons et le fromage.")
 				),
@@ -354,7 +354,7 @@ public class RecipeService {
 					new Ingredient("Croutons", 50, QuantityType.GRAM, Allergen.WHEAT),
 					new Ingredient("Parmesan", 30, QuantityType.GRAM, Allergen.DAIRY)
 				),
-				Diet.OMNIVORE, new Timestamp(900),
+				Diet.OMNIVORE, 900,
 				List.of(
 					new Step("Préparer la salade", "Cuire le poulet et assembler la salade avec les croutons et le parmesan.")
 				),
@@ -369,7 +369,7 @@ public class RecipeService {
 					new Ingredient("Lait de coco", 200, QuantityType.MILLILITER, Allergen.NONE),
 					new Ingredient("Pâte de curry", 10, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.VEGAN, new Timestamp(1200),
+				Diet.VEGAN, 1200,
 				List.of(
 					new Step("Préparer le curry", "Faire cuire les légumes dans la pâte de curry et le lait de coco.")
 				),
@@ -384,7 +384,7 @@ public class RecipeService {
 					new Ingredient("Oeufs", 3, QuantityType.PART, Allergen.EGGS),
 					new Ingredient("Beurre", 50, QuantityType.GRAM, Allergen.DAIRY)
 				),
-				Diet.VEGETARIAN, new Timestamp(1800),
+				Diet.VEGETARIAN,1800,
 				List.of(
 					new Step("Préparer le gâteau", "Mélanger les ingrédients et cuire au four.")
 				),
@@ -399,7 +399,7 @@ public class RecipeService {
 					new Ingredient("Parmesan", 30, QuantityType.GRAM, Allergen.DAIRY),
 					new Ingredient("Huile d'olive", 10, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.VEGETARIAN, new Timestamp(900),
+				Diet.VEGETARIAN, 900,
 				List.of(
 					new Step("Cuire les pâtes", "Cuire les pâtes et mélanger avec le pesto et le parmesan.")
 				),
@@ -414,7 +414,7 @@ public class RecipeService {
 					new Ingredient("Ail", 1, QuantityType.PART, Allergen.NONE),
 					new Ingredient("Huile d'olive", 10, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.VEGAN, new Timestamp(1800),
+				Diet.VEGAN, 1800,
 				List.of(
 					new Step("Préparer les boulettes", "Mixer les lentilles et les légumes et former des boulettes."),
 					new Step("Cuire les boulettes", "Faire cuire les boulettes dans une poêle avec de l'huile d'olive.")
@@ -430,7 +430,7 @@ public class RecipeService {
 					new Ingredient("Sucre", 50, QuantityType.GRAM, Allergen.NONE),
 					new Ingredient("Cannelle", 5, QuantityType.GRAM, Allergen.NONE)
 				),
-				Diet.VEGETARIAN, new Timestamp(2400),
+				Diet.VEGETARIAN, 2400,
 				List.of(
 					new Step("Préparer la tarte", "Étaler la pâte, ajouter les pommes et le sucre, puis cuire au four.")
 				),

@@ -16,14 +16,14 @@ public class Recipe {
 	public String name;
 	public List<Ingredient> ingredients;
 	public Diet diet;
-	public Timestamp preparationTime;
+	public Number preparationTime;
 	public List<Step> steps;
 	public Number lipid;
 	public Number carbohydrate;
 	public Number protein;
 	public Number calories;
 
-	public Recipe(String name, List<Ingredient> ingredients, Diet diet, Timestamp preparationTime, List<Step> steps, Number lipid, Number carbohydrate, Number protein, Number calories){
+	public Recipe(String name, List<Ingredient> ingredients, Diet diet, Number preparationTime, List<Step> steps, Number lipid, Number carbohydrate, Number protein, Number calories){
 		this.name = name;
 		this.ingredients = ingredients;
 		this.diet = diet;
