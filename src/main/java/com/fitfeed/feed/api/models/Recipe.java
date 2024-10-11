@@ -13,6 +13,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 @Getter
 @Setter
 public class Recipe {
+	public int id;
 	public String name;
 	public List<Ingredient> ingredients;
 	public Diet diet;
@@ -23,7 +24,8 @@ public class Recipe {
 	public Number protein;
 	public Number calories;
 
-	public Recipe(String name, List<Ingredient> ingredients, Diet diet, Number preparationTime, List<Step> steps, Number lipid, Number carbohydrate, Number protein, Number calories){
+	public Recipe(int id, String name, List<Ingredient> ingredients, Diet diet, Number preparationTime, List<Step> steps, Number lipid, Number carbohydrate, Number protein, Number calories){
+		this.id = id;
 		this.name = name;
 		this.ingredients = ingredients;
 		this.diet = diet;

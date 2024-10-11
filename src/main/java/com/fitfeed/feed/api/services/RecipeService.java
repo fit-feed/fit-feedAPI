@@ -15,7 +15,7 @@ import java.util.List;
 public class RecipeService {
 	public List<Recipe> getRecipes(){
 		return List.of(
-			new Recipe("Salade de quinoa aux légumes",
+			new Recipe(1,"Salade de quinoa aux légumes",
 				List.of(
 					new Ingredient("Quinoa", 100, QuantityType.GRAM, Allergen.NONE),
 					new Ingredient("Tomate", 2, QuantityType.PART, Allergen.NONE),
@@ -30,7 +30,7 @@ public class RecipeService {
 				10, 40, 12, 350
 			),
 
-			new Recipe("Omelette aux champignons",
+			new Recipe(2,"Omelette aux champignons",
 				List.of(
 					new Ingredient("Oeufs", 3, QuantityType.PART, Allergen.EGGS),
 					new Ingredient("Champignon", 100, QuantityType.GRAM, Allergen.NONE),
@@ -45,7 +45,7 @@ public class RecipeService {
 				20, 5, 18, 250
 			),
 
-			new Recipe("Curry de lentilles",
+			new Recipe(3,"Curry de lentilles",
 				List.of(
 					new Ingredient("Lentilles", 150, QuantityType.GRAM, Allergen.NONE),
 					new Ingredient("Lait de coco", 200, QuantityType.MILLILITER, Allergen.NONE),
@@ -60,7 +60,7 @@ public class RecipeService {
 				15, 60, 15, 450
 			),
 
-			new Recipe("Poulet grillé aux légumes",
+			new Recipe(4,"Poulet grillé aux légumes",
 				List.of(
 					new Ingredient("Poulet", 200, QuantityType.GRAM, Allergen.NONE),
 					new Ingredient("Brocoli", 150, QuantityType.GRAM, Allergen.NONE),
@@ -75,7 +75,7 @@ public class RecipeService {
 				25, 30, 40, 600
 			),
 
-			new Recipe("Soupe de patate douce et carottes",
+			new Recipe(5,"Soupe de patate douce et carottes",
 				List.of(
 					new Ingredient("Patate douce", 2, QuantityType.PART, Allergen.NONE),
 					new Ingredient("Carotte", 3, QuantityType.PART, Allergen.NONE),
@@ -89,7 +89,7 @@ public class RecipeService {
 				10, 50, 5, 300
 			),
 
-			new Recipe("Pâtes sans gluten à la sauce tomate",
+			new Recipe(6,"Pâtes sans gluten à la sauce tomate",
 				List.of(
 					new Ingredient("Pâtes sans gluten", 200, QuantityType.GRAM, Allergen.GLUTEN),
 					new Ingredient("Tomate", 4, QuantityType.PART, Allergen.NONE),
@@ -103,7 +103,7 @@ public class RecipeService {
 				5, 70, 10, 400
 			),
 
-			new Recipe("Tofu sauté aux légumes",
+			new Recipe(7,"Tofu sauté aux légumes",
 				List.of(
 					new Ingredient("Tofu", 200, QuantityType.GRAM, Allergen.NONE),
 					new Ingredient("Brocoli", 100, QuantityType.GRAM, Allergen.NONE),
@@ -118,7 +118,7 @@ public class RecipeService {
 				15, 20, 20, 350
 			),
 
-			new Recipe("Riz au lait sans lactose",
+			new Recipe(8,"Riz au lait sans lactose",
 				List.of(
 					new Ingredient("Riz", 100, QuantityType.GRAM, Allergen.NONE),
 					new Ingredient("Lait d'amande", 300, QuantityType.MILLILITER, Allergen.TREE_NUTS),
@@ -132,7 +132,7 @@ public class RecipeService {
 				5, 80, 10, 450
 			),
 
-			new Recipe("Galettes de légumes",
+			new Recipe(9,"Galettes de légumes",
 				List.of(
 					new Ingredient("Carotte", 2, QuantityType.PART, Allergen.NONE),
 					new Ingredient("Courgette", 1, QuantityType.PART, Allergen.NONE),
@@ -146,7 +146,7 @@ public class RecipeService {
 				5, 30, 8, 300
 			),
 
-			new Recipe("Risotto aux champignons",
+			new Recipe(10,"Risotto aux champignons",
 				List.of(
 					new Ingredient("Riz Arborio", 150, QuantityType.GRAM, Allergen.NONE),
 					new Ingredient("Champignons", 100, QuantityType.GRAM, Allergen.NONE),
@@ -162,7 +162,7 @@ public class RecipeService {
 			),
 
 			// Nouvelle recette 2 : Smoothie banane et amandes
-			new Recipe("Smoothie banane et amandes",
+			new Recipe(11,"Smoothie banane et amandes",
 				List.of(
 					new Ingredient("Banane", 1, QuantityType.PART, Allergen.NONE),
 					new Ingredient("Lait d'amande", 250, QuantityType.MILLILITER, Allergen.TREE_NUTS),
@@ -176,7 +176,7 @@ public class RecipeService {
 			),
 
 			// Nouvelle recette 3 : Wraps au poulet et avocat
-			new Recipe("Wraps au poulet et avocat",
+			new Recipe(12,"Wraps au poulet et avocat",
 				List.of(
 					new Ingredient("Tortillas de blé", 2, QuantityType.PART, Allergen.WHEAT),
 					new Ingredient("Poulet", 150, QuantityType.GRAM, Allergen.NONE),
@@ -191,7 +191,7 @@ public class RecipeService {
 			),
 
 			// Nouvelle recette 4 : Pancakes sans gluten
-			new Recipe("Pancakes sans gluten",
+			new Recipe(13,"Pancakes sans gluten",
 				List.of(
 					new Ingredient("Farine sans gluten", 100, QuantityType.GRAM, Allergen.GLUTEN),
 					new Ingredient("Lait d'amande", 200, QuantityType.MILLILITER, Allergen.TREE_NUTS),
@@ -207,7 +207,7 @@ public class RecipeService {
 			),
 
 			// Nouvelle recette 5 : Chili sin carne
-			new Recipe("Chili sin carne",
+			new Recipe(14,"Chili sin carne",
 				List.of(
 					new Ingredient("Haricots rouges", 200, QuantityType.GRAM, Allergen.NONE),
 					new Ingredient("Tomate", 3, QuantityType.PART, Allergen.NONE),
@@ -222,7 +222,7 @@ public class RecipeService {
 			),
 
 			// Nouvelle recette 6 : Saumon grillé à l'aneth
-			new Recipe("Saumon grillé à l'aneth",
+			new Recipe(15,"Saumon grillé à l'aneth",
 				List.of(
 					new Ingredient("Saumon", 200, QuantityType.GRAM, Allergen.FISH),
 					new Ingredient("Aneth", 5, QuantityType.GRAM, Allergen.NONE),
@@ -238,7 +238,7 @@ public class RecipeService {
 			),
 
 			// Nouvelle recette 7 : Burger végétarien au pois chiches
-			new Recipe("Burger végétarien au pois chiches",
+			new Recipe(16,"Burger végétarien au pois chiches",
 				List.of(
 					new Ingredient("Pois chiches", 150, QuantityType.GRAM, Allergen.NONE),
 					new Ingredient("Pain burger", 2, QuantityType.PART, Allergen.WHEAT),
@@ -254,7 +254,7 @@ public class RecipeService {
 			),
 
 			// Nouvelle recette 8 : Gaufres à la farine de coco
-			new Recipe("Gaufres à la farine de coco",
+			new Recipe(17,"Gaufres à la farine de coco",
 				List.of(
 					new Ingredient("Farine de coco", 100, QuantityType.GRAM, Allergen.TREE_NUTS),
 					new Ingredient("Lait de coco", 200, QuantityType.MILLILITER, Allergen.NONE),
@@ -270,7 +270,7 @@ public class RecipeService {
 			),
 
 			// Nouvelle recette 9 : Pizza végétarienne sans gluten
-			new Recipe("Pizza végétarienne sans gluten",
+			new Recipe(18,"Pizza végétarienne sans gluten",
 				List.of(
 					new Ingredient("Pâte à pizza sans gluten", 1, QuantityType.PART, Allergen.GLUTEN),
 					new Ingredient("Tomate", 2, QuantityType.PART, Allergen.NONE),
@@ -285,7 +285,7 @@ public class RecipeService {
 			),
 
 			// Nouvelle recette 10 : Taboulé au quinoa
-			new Recipe("Taboulé au quinoa",
+			new Recipe(19,"Taboulé au quinoa",
 				List.of(
 					new Ingredient("Quinoa", 150, QuantityType.GRAM, Allergen.NONE),
 					new Ingredient("Concombre", 1, QuantityType.PART, Allergen.NONE),
@@ -300,7 +300,7 @@ public class RecipeService {
 			),
 
 		// Nouvelle recette 12 : Salade de quinoa et avocat
-		new Recipe("Salade de quinoa et avocat",
+		new Recipe(20,"Salade de quinoa et avocat",
 			List.of(
 				new Ingredient("Quinoa", 150, QuantityType.GRAM, Allergen.NONE),
 				new Ingredient("Avocat", 1, QuantityType.PART, Allergen.NONE),
@@ -316,7 +316,7 @@ public class RecipeService {
 		),
 
 			// Nouvelle recette 13 : Soupe miso
-			new Recipe("Soupe miso",
+			new Recipe(21,"Soupe miso",
 				List.of(
 					new Ingredient("Miso", 50, QuantityType.GRAM, Allergen.SOY),
 					new Ingredient("Algues", 10, QuantityType.GRAM, Allergen.NONE),
@@ -332,7 +332,7 @@ public class RecipeService {
 			),
 
 			// Nouvelle recette 14 : Omelette aux champignons
-			new Recipe("Omelette aux champignons",
+			new Recipe(22,"Omelette aux champignons",
 				List.of(
 					new Ingredient("Oeufs", 3, QuantityType.PART, Allergen.EGGS),
 					new Ingredient("Champignons", 100, QuantityType.GRAM, Allergen.NONE),
@@ -347,7 +347,7 @@ public class RecipeService {
 			),
 
 			// Nouvelle recette 15 : Salade César au poulet
-			new Recipe("Salade César au poulet",
+			new Recipe(23,"Salade César au poulet",
 				List.of(
 					new Ingredient("Poulet", 150, QuantityType.GRAM, Allergen.NONE),
 					new Ingredient("Salade romaine", 100, QuantityType.GRAM, Allergen.NONE),
@@ -362,7 +362,7 @@ public class RecipeService {
 			),
 
 			// Nouvelle recette 16 : Curry de légumes
-			new Recipe("Curry de légumes",
+			new Recipe(24,"Curry de légumes",
 				List.of(
 					new Ingredient("Carottes", 2, QuantityType.PART, Allergen.NONE),
 					new Ingredient("Courgettes", 2, QuantityType.PART, Allergen.NONE),
@@ -377,7 +377,7 @@ public class RecipeService {
 			),
 
 			// Nouvelle recette 17 : Gâteau au chocolat sans gluten
-			new Recipe("Gâteau au chocolat sans gluten",
+			new Recipe(26,"Gâteau au chocolat sans gluten",
 				List.of(
 					new Ingredient("Farine sans gluten", 150, QuantityType.GRAM, Allergen.GLUTEN),
 					new Ingredient("Chocolat noir", 100, QuantityType.GRAM, Allergen.NONE),
@@ -392,7 +392,7 @@ public class RecipeService {
 			),
 
 			// Nouvelle recette 18 : Pâtes au pesto
-			new Recipe("Pâtes au pesto",
+			new Recipe(27,"Pâtes au pesto",
 				List.of(
 					new Ingredient("Pâtes", 150, QuantityType.GRAM, Allergen.WHEAT),
 					new Ingredient("Pesto", 50, QuantityType.GRAM, Allergen.TREE_NUTS),
@@ -407,7 +407,7 @@ public class RecipeService {
 			),
 
 			// Nouvelle recette 19 : Boulettes de lentilles
-			new Recipe("Boulettes de lentilles",
+			new Recipe(28,"Boulettes de lentilles",
 				List.of(
 					new Ingredient("Lentilles", 200, QuantityType.GRAM, Allergen.NONE),
 					new Ingredient("Oignons", 1, QuantityType.PART, Allergen.NONE),
@@ -423,7 +423,7 @@ public class RecipeService {
 			),
 
 			// Nouvelle recette 20 : Tarte aux pommes sans lactose
-			new Recipe("Tarte aux pommes sans lactose",
+			new Recipe(29,"Tarte aux pommes sans lactose",
 				List.of(
 					new Ingredient("Pâte brisée sans lactose", 1, QuantityType.PART, Allergen.WHEAT),
 					new Ingredient("Pommes", 3, QuantityType.PART, Allergen.NONE),
