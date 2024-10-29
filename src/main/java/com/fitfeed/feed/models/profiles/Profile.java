@@ -1,9 +1,15 @@
 package com.fitfeed.feed.models.profiles;
 
+import com.fitfeed.feed.models.Allergen;
+import com.fitfeed.feed.models.Diet;
+import com.fitfeed.feed.models.recipes.Recipe;
+import com.fitfeed.feed.models.recipes.RecipeToProfile;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
 
 @Entity
 @Setter
@@ -36,5 +42,16 @@ public class Profile {
     @ManyToOne(optional = false)
     private Goal goal;
 
+	@ManyToOne
+	private Diet diet;
+
+	@ManyToMany
+	private List<Allergen> allergens;
+
+	@ManyToMany
+	private List<Recipe> favoriteRecipes;
+
+	@OneToMany
+	private List<RecipeToProfile> Recipes;
 
 }

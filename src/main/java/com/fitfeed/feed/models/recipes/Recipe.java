@@ -1,9 +1,13 @@
 package com.fitfeed.feed.models.recipes;
 
+import com.fitfeed.feed.models.Diet;
+import com.fitfeed.feed.models.Picture;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
 
 @Entity
 @Setter
@@ -34,10 +38,16 @@ public class Recipe {
     @Column
     private Number preparationTime;
 
+	@ManyToOne
+	private RecipeType recipeType;
 
+	@ManyToOne
+	private Diet diet;
 
+	@OneToMany
+	private List<Step> steps;
 
-
-
+	@OneToMany
+	private List<Picture> pictures;
 
 }

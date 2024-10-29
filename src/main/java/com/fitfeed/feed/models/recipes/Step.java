@@ -1,5 +1,6 @@
 package com.fitfeed.feed.models.recipes;
 
+import com.fitfeed.feed.models.Picture;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -24,4 +25,7 @@ public class Step {
 
     @Column(nullable = false)
     private int orderNumber;
+
+	@OneToOne
+	private Picture picture;
 }
